@@ -1,0 +1,176 @@
+/* The overall header */
+.header {
+    display: flex;
+    align-items: baseline;
+    background-color: violet;
+    border: 5px solid blue;
+    padding: 1.5%;
+    padding-left: 5%;
+    /* flex: 1; */
+}
+
+/* Logo Part */
+.header > .logo {
+    margin-right: auto;
+}
+
+/* Navigation Link */
+.header > .navlink {
+    display: inherit;
+    gap: 10px;
+    align-items: baseline;
+}
+
+
+/* Hero section */
+.hero {
+    display: flex;
+    /* flex: 1; */
+    align-items: center;
+    height: 250px;
+    background-color: blue;
+    padding: 5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: none;
+}
+
+
+/* .hero > .image {
+    
+
+} */
+
+/* Text Instance of hero */
+.heading {
+    /* Set width for dividing the section */
+    width: 60%;
+    /* TODO move the heading a lil bit */
+}
+
+
+/* Image instance of hero section */
+.hero > .image {
+    width: 40%;
+    /* it isnt work */
+    min-width: 0; 
+
+    display: inherit;
+}
+
+.hero > .image > img {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Set the info section to flex row + justify it to middle */
+.infosection {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    background-color: blueviolet;
+    padding: 5%;
+
+    /* align-items: center; */
+}
+
+.infosection > .h1 {
+    text-align: center;
+    /* Need to push down a little */
+    margin-bottom: 30px;
+}
+
+/* Set parent div to flex + gap and space even */
+.infosection > .parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+    min-width: none;
+}
+
+.infosection > .parent > .image > .img {
+    width: 130px;
+    height: 130px;
+    border: 5px solid black;
+    border-radius: 15%;
+    background-image: url(./index.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* TODO fix the image overflow */
+/*set flex direction to column */
+.infosection > .parent > .image {
+    display: inherit;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.infosection > .parent > .image > p {
+    text-align: center;
+    padding: 5px;
+}
+
+/* Testimonal */
+.testimonal {
+    display: flex;
+    flex: 1;
+    padding: 10%;
+    flex-direction: column;
+}
+
+/* Aligning the text */
+.testimonal > b {
+    /* display: inherit; */
+    text-align: end;
+    padding-top: 20px;
+}
+
+
+.final-section > .cta {
+    display: flex;
+    /* flex-direction: column; */
+    padding: 10%;
+} 
+
+/* Align the Button */
+.final-section > .cta > .cont > .cta1 {
+    flex-grow: 2;
+    flex-shrink: 1;
+    margin-left: auto;
+    /* width: 60%; */
+}
+
+.final-section > .cta > .cont > .button {
+    display: inherit;
+    flex-grow: 1;
+    flex-shrink: 2;
+    /* width: 40%; */
+    align-items: center;
+    justify-content: end;
+}
+
+.final-section > .cta > .cont {
+    padding: 5%;
+    background-color: aqua;
+    display: flex;
+    width: 100%;
+}
+
+/* Final div for footer */
+.footer {
+    display: flex;
+    width: 100%;
+    background-color: aqua;
+}
+
+.footer > p {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+/* For media query */
+/* @media (max-width: 100) */
